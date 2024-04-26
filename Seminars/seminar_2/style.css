@@ -7,6 +7,10 @@ a{
     text-decoration: none;
 }
 
+body{
+    background: #020A18;
+}
+
 .top{
     padding-bottom: 99px;
 }
@@ -14,21 +18,94 @@ a{
 .header{
     padding-top: 39px;
     padding-bottom: 39px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.header__link{
+    font-style: normal;
+    font-weight: 600;
+    font-style: 16px;
+    line-height: 22px;
+    color: #FFF;
 }
 
 .top__content{
     margin-top: 160px;
     margin-bottom: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
 }
 
-.subtitle{
-    margin-bottom: 10px;
-}
-
-.title{
-    margin-bottom: 40px;
+.top__info{
+    width: 604px;
 }
 
 .top__buttons{
     margin-top: 50px;
+    display: flex;
+    gap: 20px
+}
+
+.top__logo{
+    display: flex;
+    gap: 71px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle{
+    margin-bottom: 10px;
+    color: rgb(58, 104, 184);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+    
+}
+
+.title{
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.text{
+    width: 558px;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.button{
+    padding: 15px 30px;
+    border-radius: 5px;
+    background: rgb(58, 104, 184);
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    display: flex;
+    gap: 10px
 }
