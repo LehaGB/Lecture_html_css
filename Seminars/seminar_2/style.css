@@ -9,6 +9,7 @@ a{
 
 body{
     background: #020A18;
+    font-family: sans-serif;
 }
 
 .top{
@@ -55,11 +56,10 @@ body{
 
 .top__logo{
     display: flex;
-    gap: 71px;
+    gap: 85px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    padding-left: 380px;
 }
 
 .subtitle{
@@ -108,4 +108,46 @@ body{
     border: none;
     display: flex;
     gap: 10px
+}
+
+.content{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 362px);
+    justify-content: center;
+    padding-top: 264px;
+    padding-bottom: 243px;
+}
+
+.item{
+    border-radius: 10px;
+    background: rgb(19, 32, 53);
+    padding: 30px;
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+}
+
+.item__big{
+    grid-column: span 2;
+    grid-row: span 2;
+    gap: 60px;
+}
+
+.heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 125%;
+    text-align: center;
+    color: #FFF;
+}
+
+.item__text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFF;
 }
