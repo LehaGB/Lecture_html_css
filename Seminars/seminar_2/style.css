@@ -9,7 +9,12 @@ a{
 
 body{
     background: #020A18;
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
+}
+
+.center{
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
 }
 
 .top{
@@ -150,4 +155,44 @@ body{
     line-height: 26px;
     text-align: center;
     color: #FFF;
+}
+
+@media (max-width: 1024px) {
+    .center{
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    top{
+        padding-bottom: 120px;
+    }
+
+    .top__logo{
+        gap: 32px;
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .content{
+        grid-template-columns: repeat(1, 362px);
+        gap: 32px;
+    }
+
+    .item__big{
+        grid-column: span 1;
+        grid-row: span 1;
+        gap: 30px;
+    }
+
+    .item__big img{
+        width: 98px;
+    }
 }
