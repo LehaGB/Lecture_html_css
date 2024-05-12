@@ -7,6 +7,10 @@ a{
     text-decoration: none;
 }
 
+img{
+    max-width: 100%;
+}
+
 body{
     background: #020A18;
     font-family: "Open Sans", sans-serif;
@@ -59,12 +63,10 @@ body{
     gap: 20px
 }
 
-.top__logo{
+.top__logos{
+    gap: 30px;
     display: flex;
-    gap: 85px;
-    flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 380px;
 }
 
 .subtitle{
@@ -157,6 +159,44 @@ body{
     color: #FFF;
 }
 
+.about{
+    margin-bottom: 221px;
+}
+
+.about__info{
+    width: 548px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__heading{
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: #FFF;
+}
+
+.about__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+
+.about__text{
+    width: 460px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFF;
+    opacity: 0.7;
+}
+
 @media (max-width: 1024px) {
     .center{
         padding-left: calc(50% - 376px);
@@ -194,5 +234,105 @@ body{
 
     .item__big img{
         width: 98px;
+    }
+
+    .about__content{
+        gap: 64px;
+    }
+}
+
+@media (max-width: 767px){
+
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .header{
+        padding-top: 22px;
+        padding-bottom: 22px;
+        gap: 16px;
+
+    }
+
+    .header__link{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .top__content{
+        margin-top: 64px;
+    }
+
+    .top__info{
+        width: 100%;
+        text-align: center;
+    }
+
+    .top__buttons{
+        margin-top: 39px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px 
+    }
+
+    .subtitle{
+        font-size: 14px;
+        margin-bottom: 6px;
+        text-align: center;
+    }
+
+    .title{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .text{
+        width: 100%;
+        margin-bottom: 64px;
+    }
+
+    .top{
+        padding-bottom: 108px;
+    }
+
+    .top__content{
+        margin-bottom: 128px;
+    }
+
+    .top__logo{
+        margin-left: 24px;
+        margin-right: auto;
+    }
+
+    .top__logo2{
+        margin-right: auto;
+        margin-left: 75px;
+    }
+
+    .top__logo1{
+        margin-right: auto;
+        margin-left: 75px;
+        width: 50%;
+        height: 50%;
+    }
+
+    .about__content{
+        gap: 32px;
+    }
+
+    .about__info{
+        gap: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about__heading{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .about__text{
+        width: 100%;
     }
 }
